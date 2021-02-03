@@ -34,7 +34,7 @@ query transactions($cursor: String, $fromBlock: Int) {
 `
   let timestamp = new Date();
   let yesterday = new Date(timestamp);
-  yesterday.setDate(yesterday.getDate() - 1);
+  yesterday.setDate(yesterday.getDate() - 5);
 
   const txs = await all(query)
   const filtered = txs.filter((tx) => {
@@ -45,16 +45,24 @@ query transactions($cursor: String, $fromBlock: Int) {
     return tx.node.owner.address
   })
 
-  const allocation = {}
+  const allocations = {}
   for (const owner of owners) {
-    if (!allocation[owner]) {
-      allocation[owner] = 1
+    if (!allocations[owner]) {
+      allocations[owner] = 1
     } else {
-      allocation[owner] += 1
+      allocations[owner] += 1
     }
   }
 
-  console.log(allocation)
+  const astatine = []
+  for (const address of Object.keys(allocations)) {
+    astatine.push({
+      "address": address,
+      "weight": allocations[address]
+    })
+  }
+
+  console.log(astatine)
 }
 
 tokenAllocation()
