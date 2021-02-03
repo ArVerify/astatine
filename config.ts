@@ -9,7 +9,6 @@ const config: config = {
   initial_emit_amount: 0, // A
   decay_const: 0, // k
   token_contract_id: COMMUNITY_ID,
-  // @ts-ignore
   token_allocations: tokenAllocation(),
 };
 

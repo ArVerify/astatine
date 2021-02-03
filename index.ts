@@ -10,7 +10,7 @@ export interface config {
   initial_emit_amount: number;
   decay_const: number;
   token_contract_id: string;
-  token_allocations: string[] | { address: string; weight: number }[];
+  token_allocations: Promise<{ address: string; weight: number }[]>;
 }
 
 interface status {
@@ -46,7 +46,7 @@ const dist = {
 const dist_curve: string = isNaN(config.decay_const) ? 'linear' : 'exponential';
 const dist_total: number = sigma(0, config.emission_period / config.time_interval, dist[dist_curve]);
 
-console.log({ config: { dist_curve, dist_total, ...config } });
+console.log({config: {dist_curve, dist_total, ...config}});
 
 // save init time & balance on first run
 if (!fs.existsSync('status.json')) {
@@ -138,10 +138,10 @@ async function emit(transactions: any) {
 
   // create a transaction if conditions meet
   if (time <= config.emission_period && expend > 0 && status.balance > 0) {
-    console.log({ time, expend, balance: status.balance });
+    console.log({time, expend, balance: status.balance});
 
     // create transactions to send
-    let transactions = await primeCannon(expend, config.token_allocations, time);
+    let transactions = await primeCannon(expend, await config.token_allocations, time);
     // send the transactions
     let sentTransactions = await emit(transactions);
 
@@ -157,6 +157,6 @@ async function emit(transactions: any) {
 
     console.log('Current Status:', status);
   } else {
-    console.log('Unmet Conditions', { time, expend, balance: status.balance });
+    console.log('Unmet Conditions', {time, expend, balance: status.balance});
   }
 })();
