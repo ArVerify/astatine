@@ -7,6 +7,13 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.2.tgz"
   integrity sha512-jeYJU2kl7hL9U5xuI/BhKPZ4vqGM/OmK6whiFAXVhlstzZhVamWhDSmHyGLIp+RVyuF9/d0dqr2P85aFj4BvJg==
 
+ar-gql@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/ar-gql/-/ar-gql-0.0.3.tgz#3c0734e572a26842ffbdb6bb343182f96e2a711f"
+  integrity sha512-P9xdIVU6InndVBO9n6nbKpu1A1Ad/6Yr02Lf835zZiEq4t60zMkp6epb88gr+YnXbDYdKuCrXTJWMHpHK7ZNTw==
+  dependencies:
+    node-fetch "^2.6.1"
+
 arweave@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/arweave/-/arweave-1.9.1.tgz"
@@ -77,6 +84,11 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz"
   integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
+
+node-fetch@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 safer-buffer@^2.1.0:
   version "2.1.2"
