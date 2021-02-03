@@ -1,6 +1,6 @@
 import {all} from "ar-gql";
 
-const tokenAllocation = async () => {
+export const tokenAllocation = async (): Promise<{ address: string, weight: number }[]> => {
   const query = `
 query transactions($cursor: String, $fromBlock: Int) {
   transactions(
@@ -63,6 +63,6 @@ query transactions($cursor: String, $fromBlock: Int) {
   }
 
   console.log(astatine)
-}
 
-tokenAllocation()
+  return astatine
+}
