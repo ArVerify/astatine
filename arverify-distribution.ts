@@ -54,7 +54,7 @@ query transactions($cursor: String, $fromBlock: Int) {
     }
   }
 
-  const astatine = []
+  const astatine: { address: string, weight: number }[] = [];
   for (const address of Object.keys(allocations)) {
     astatine.push({
       "address": address,
