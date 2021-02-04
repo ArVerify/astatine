@@ -34,7 +34,7 @@ query transactions($cursor: String, $fromBlock: Int) {
 `
   let timestamp = new Date();
   let yesterday = new Date(timestamp);
-  yesterday.setDate(yesterday.getDate() - 5);
+  yesterday.setDate(yesterday.getDate() - 1);
 
   const txs = await all(query)
   const filtered = txs.filter((tx) => {
