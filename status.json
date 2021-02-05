@@ -1,6 +1,6 @@
 {
   "time_init": 1612476609561,
-  "balance": 1403225,
+  "balance": 1306450,
   "distributions": [
     {
       "run": 1,
@@ -71,6 +71,33 @@
         "2I4IPOZje-SpkovOU5Auho_-qN8RC7qmzmrFpyDy71k",
         "f26FmqstuchK9MyWfZCMiVMWuRA7GUrS6JpFWxwaVh4",
         "Xp7EFo_WnU819Gne3DxZHqZ1Avliq2XzWBg5fPjq5CY"
+      ]
+    },
+    {
+      "run": 2,
+      "time": 0,
+      "expend": 96775,
+      "transactions": [
+        "W_LwzdMxdSDUiNZRDn9Ys_ymvV13ndS7Krk7120YrAQ",
+        "NyOu2IXS7-HQmrak7H2HcEyLb9YjiIUSMdkFsGnh78c",
+        "U3wtowLqYA25dK7mg8_nd8H6iAB-FixpFb_ehYfDHxk",
+        "GZXDV-gDjP3AN1nsD8yOj_Td81Ajle97T7yl2dcvhWg",
+        "d_6cM84V62zgTebTiir1GGvaFmvGhZMWzaGh8MR14kQ",
+        "KAguOPqyGjXSVfcK_q5uAmpFkA7fWxbUhtn2FCp6skI",
+        "dyep651vhxtL7kKgz-0zhmNvtchg-C8ivCq5Si05V3o",
+        "sL4Nxv-mXnLmdFf7ygAzBqw-wF81rNDMxzNL8uUn4Xo",
+        "54airtv4OzSRGgp2UlYstmV_RG2u8w0PguVf6fuGj7U",
+        "xa2uefd7SpJyh9kmFDaW8gVeGV4T-5fWPOxEiy9n65w",
+        "CVD6kiYLzNGtcwPgBbiq1n2NKuqywl0gfDkaCAx9P7Y",
+        "nfynlogC7mtHUhHUUj5BtJzBMPzPtzQG0HJfGWXlg-I",
+        "3vkrsz_g7o75b3MYurG5X8BkZrMBHrkxCqkFWAjPRB0",
+        "O_GpPRaf2yD5TBE9b8qWCmpc7-fVMFpGpVGZXNUkvV8",
+        "mkDf3LA0iIml4wNwo1eJvQ6d_GGMpTsbvWHRNDc1g_0",
+        "TL6hqBAtlLfMfu5D9iVdst6Eg5WYNytmeQEatQo-jBE",
+        "1Uxak1CyA7U4olgdIfXhcRNFSOLjLNC_yRpx-9gU_6U",
+        "A5ApZ1UOq5v4hIo85MhsZdV-KAm_YqygPkgcFzFU2Xg",
+        "iuO54PWP3hUszMOayeRvRAXtppyuA_TB2l_IgHstu70",
+        "QLjizr45MVvCPk3i9wnR1oDOl9eCsasYKz4XCDncLyk"
       ]
     }
   ]
