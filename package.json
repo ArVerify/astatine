@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "start": "tsc index.ts --outDir dist && node dist/index.js",
-    "allocate": "tsc arverify-distribution.ts && node arverify-distribution.js"
+    "allocate": "tsc arverify-distribution.ts --esModuleInterop true && node arverify-distribution.js"
   },
   "dependencies": {
     "ar-gql": "^0.0.3",
