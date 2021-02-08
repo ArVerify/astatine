@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "tsc index.ts --outDir dist && node dist/index.js",
+    "start": "tsc index.ts --outDir dist --esModuleInterop true && node dist/index.js",
     "allocate": "tsc arverify-distribution.ts --esModuleInterop true && node arverify-distribution.js"
   },
   "dependencies": {
