@@ -1,6 +1,15 @@
-import {all} from "ar-gql";
+import Arweave from "arweave";
+import { all } from "ar-gql";
+
+const client = new Arweave({
+  host: "arweave.net",
+  port: 443,
+  protocol: "https",
+});
 
 export const tokenAllocation = async (): Promise<{ address: string, weight: number }[]> => {
+  const height = (await client.network.getInfo()).height;
+  
   const query = `
 query transactions($cursor: String, $fromBlock: Int) {
   transactions(
@@ -10,7 +19,7 @@ query transactions($cursor: String, $fromBlock: Int) {
       { name: "Method", values: "Link" }
     ]
     after: $cursor
-    block: { min: $fromBlock }
+    block: { min: $fromBlock, max: ${height} }
   ) {
     pageInfo {
       hasNextPage
