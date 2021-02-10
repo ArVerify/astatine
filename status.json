@@ -1,6 +1,6 @@
 {
   "time_init": 1612476609561,
-  "balance": 1051611,
+  "balance": 974191,
   "distributions": [
     {
       "run": 1,
@@ -141,6 +141,25 @@
         "3hkTCA60mz10BHrN1u68WxiYX3W__B8HbgYg_1sLHU4",
         "lmkmaMUV-XzmY6yWZXUbpZzd7sikVW4PEUo7YZfR2mc",
         "1BHvs27C0CxLZiPUVNzZp1y0GWh1bgb5WjpK678DZKk"
+      ]
+    },
+    {
+      "run": 6,
+      "time": 518400,
+      "expend": 77420,
+      "transactions": [
+        "HEMfCtAbSK0eU_R9XYtFsILHn4r87UmbO0T8-4qzygo",
+        "srqFNox0lYQSLXyHCHYS33Jr_zromd9wFMgBExsuJDk",
+        "C6DkFoMlWOA1x_UQkjl6PSOpoZUhUofRiato6r6xXfM",
+        "AYdmSQ_gT87smIrjT-W2V7MHHfLceITOLTUs2kb8vJE",
+        "DHJZM_BcI6RAhVikP618GHrQINWGNSJ7-OUz_tiOCXQ",
+        "P9DqRK-bjGtrOil193D7faJF-vzOKahpA4IW6Y7Anw4",
+        "Fe4p7DOsmZEe2M-nEIie0zQuU0VlNJOiin1WU6ZEi7g",
+        "guC9H9eemeW7VGJicosO_216JpUmYSOX96qK5SxDc-8",
+        "cRcRHbXhEp09C5KwwH9eDrI4S4hP6lkIcH3RZWehDFg",
+        "GrREJXluYJd94SCdJoSj9pgfbuwX4dHWb8bXWv04y0w",
+        "2Wil5cEe0i5Tk7ilqG0SJw-1AnJMQRmfIxqW_4tjhJo",
+        "99qSwlPz1p6bMcbL_NA73rJiqXFpJ7R3uSS2XNNOysM"
       ]
     }
   ]
