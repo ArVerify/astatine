@@ -1,6 +1,6 @@
 {
   "time_init": 1612476609561,
-  "balance": 116127,
+  "balance": 103224,
   "distributions": [
     {
       "run": 1,
@@ -338,6 +338,14 @@
       "expend": 16129,
       "transactions": [
         "EA_-l9AdgFSdvIp5JrUDjfvsKNb96Dqm2wDmYk3FCwE"
+      ]
+    },
+    {
+      "run": 26,
+      "time": 2246400,
+      "expend": 12903,
+      "transactions": [
+        "j6oHdUDW4hO8WREukD9Nqx-UQ-XJxcxEv1dFOWVvtJU"
       ]
     }
   ]
